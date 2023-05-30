@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 36px;
+  position: relative;
+  width: 100%;
+}
+
+header img {
+  position: relative;
+  left: -35vw;
+}
+
+#navbar {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  justify-self: center;
+  gap: 2rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+}
