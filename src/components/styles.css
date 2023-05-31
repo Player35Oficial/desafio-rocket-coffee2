@@ -8,7 +8,7 @@ header {
 
 header img {
   position: relative;
-  left: -35vw;
+  left: -150px;
 }
 
 #navbar {
@@ -22,4 +22,32 @@ header img {
 #navbar a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+/* BUTTON STYLE */
+
+#getmycoffee {
+  display: flex;
+  position: relative;
+  left: 175px;
+
+  background-color: inherit;
+  border: 1px solid var(--button);
+  width: 180px;
+  border-radius: 6px;
+  color: white;
+  place-items: center;
+  place-content: center;
+  text-transform: uppercase;
+  padding: 11px 38px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#getmycoffee:hover {
+  background-color: var(--button);
+  color: white;
+  transition: all 0.4s;
 }

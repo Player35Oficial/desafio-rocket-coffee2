@@ -19,6 +19,24 @@ body {
   height: 100%;
 }
 
+#root {
+  height: 100%;
+  position: relative;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  width: 321px;
+  height: 321px;
+  left: 1027px;
+  top: -63px;
+  overflow: hidden;
+
+  background: #996dff;
+  filter: blur(200px);
+}
+
 body {
   font-family: Manrope, sans-serif;
   background-color: var(--background);
@@ -34,11 +52,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  margin-top: 40px;
   position: relative;
-  height: 86vh;
+  height: 86.5vh;
   overflow-y: hidden;
+  padding-top: 2rem;
 }
 
 main::before {

@@ -13,6 +13,10 @@ export default function Header() {
         <a href="/git-cards">Gift Cards</a>
         <a href="/Lojas">Lojas</a>
       </nav>
+
+      <button id="getmycoffee">
+        <span>Pegar meu café</span>
+      </button>
     </header>
   );
 }
