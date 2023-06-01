@@ -1,11 +1,14 @@
 import Header from "../../components/Header";
 import rocketCoffee from "../../assets/rocket-coffee.png";
 import "../../styles/index.css";
+import Button from "../../components/Button";
 
 function Home() {
   return (
     <>
-      <Header />
+      <Header>
+        <Button id={"getmycoffee"} text={"Pegar meu café"} />
+      </Header>
 
       <main>
         <div className="title">

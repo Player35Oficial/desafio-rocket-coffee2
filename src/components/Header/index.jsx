@@ -1,7 +1,7 @@
-import desktopLogo from "../assets/logo-desktop.svg";
+import desktopLogo from "../../assets/logo-desktop.svg";
 import "./styles.css";
 
-export default function Header() {
+export default function Header({ children }) {
   return (
     <header>
       <img src={desktopLogo} alt="rocketseat-logo" />
@@ -14,9 +14,7 @@ export default function Header() {
         <a href="/Lojas">Lojas</a>
       </nav>
 
-      <button id="getmycoffee">
-        <span>Pegar meu café</span>
-      </button>
+      {children}
     </header>
   );
 }
