@@ -1,12 +1,13 @@
 import Header from "../../components/Header";
 import rocketCoffee from "../../assets/rocket-coffee.png";
+import desktopLogo from "../../assets/logo-desktop.svg";
 import "../../styles/index.css";
 import Button from "../../components/Button";
 
 function Home() {
   return (
     <>
-      <Header>
+      <Header logo={desktopLogo}>
         <Button id={"getmycoffee"} text={"Pegar meu café"} />
       </Header>
 

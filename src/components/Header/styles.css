@@ -6,15 +6,9 @@ header {
   width: 100%;
 }
 
-header img {
-  position: relative;
-  left: -150px;
-}
-
 #navbar {
   display: flex;
   align-self: center;
-  position: absolute;
   justify-self: center;
   gap: 2rem;
 }
@@ -28,8 +22,6 @@ header img {
 
 #getmycoffee {
   display: flex;
-  position: relative;
-  left: 175px;
 
   background-color: inherit;
   border: 1px solid var(--button);

@@ -1,10 +1,9 @@
-import desktopLogo from "../../assets/logo-desktop.svg";
 import "./styles.css";
 
-export default function Header({ children }) {
+export default function Header({ logo, children }) {
   return (
     <header>
-      <img src={desktopLogo} alt="rocketseat-logo" />
+      <img src={logo} alt="rocketseat-logo" />
 
       <nav id="navbar">
         <a href="/home">Home</a>
