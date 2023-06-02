@@ -18,6 +18,14 @@ html,
 body {
   height: 100%;
 }
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
 
 #root {
   height: 100%;
@@ -85,7 +93,7 @@ main .title .great-coffee-span {
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
     -1px 1px 0 var(--button), 1px 1px 0 var(--button);
   color: #000;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -94,4 +102,106 @@ main img {
   bottom: 0;
   left: 20vw;
   /* bottom: 80%; */
+}
+
+@media (max-width: 428px), (max-width: 768px) {
+  html::before {
+    display: none;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    gap: 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 2px 5px 0px #362759;
+  }
+
+  #navbar ul li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: var(--border);
+    padding-left: 1.875rem;
+  }
+
+  #navbar ul li a {
+    position: relative;
+    width: 100%;
+  }
+
+  #navbar ul li a.active::before {
+    content: "";
+    top: -16px;
+    position: absolute;
+    height: 56px;
+    width: 5px;
+    left: -30px;
+    background-color: var(--button);
+  }
+
+  main {
+    justify-content: space-between;
+    height: 88.5vh;
+    align-items: center;
+  }
+
+  main .title h1,
+  .great-coffee-span {
+    font-size: 40px;
+  }
+
+  main img {
+    width: 25.625rem;
+    position: relative;
+    left: 0;
+  }
+
+  main::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 495px;
+    margin: 0 13%;
+
+    background: #996dff;
+    filter: blur(200px);
+  }
+
+  main .the-coffee {
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 373px;
+    margin-top: 2rem;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  header img#burger {
+    height: 8px;
+    width: min-content;
+  }
+
+  #getmycoffee {
+    margin: 4rem 0;
+  }
 }

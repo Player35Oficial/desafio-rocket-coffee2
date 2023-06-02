@@ -6,11 +6,25 @@ export default function Header({ logo, children }) {
       <img src={logo} alt="rocketseat-logo" />
 
       <nav id="navbar">
-        <a href="/home">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/recompensas">Recompensas</a>
-        <a href="/git-cards">Gift Cards</a>
-        <a href="/Lojas">Lojas</a>
+        <ul>
+          <li>
+            <a href="/home" className="active">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/menu">Menu</a>
+          </li>
+          <li>
+            <a href="/recompensas">Recompensas</a>
+          </li>
+          <li>
+            <a href="/git-cards">Gift Cards</a>
+          </li>
+          <li>
+            <a href="/Lojas">Lojas</a>
+          </li>
+        </ul>
       </nav>
 
       {children}

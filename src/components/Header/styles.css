@@ -1,9 +1,10 @@
 header {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 36px;
   position: relative;
   width: 100%;
+  height: 95px;
+  align-items: center;
 }
 
 header img {
@@ -14,13 +15,14 @@ header img {
 #navbar {
   display: flex;
   align-self: center;
-  justify-self: center;
   gap: 2rem;
+  width: max-content;
 }
 
-#navbar a {
-  text-decoration: none;
-  color: var(--text-color);
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 /* BUTTON STYLE */
