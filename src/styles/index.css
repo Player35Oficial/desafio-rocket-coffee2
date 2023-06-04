@@ -53,6 +53,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   height: calc(100vh - 36px);
+  overflow-x: hidden;
 }
 
 /* Main H1 + Span */
@@ -110,11 +111,25 @@ main img {
   }
 
   #navbar {
+    display: none;
     position: absolute;
     top: 95px;
     left: 0;
     z-index: 1;
     width: 100%;
+  }
+
+  #navbar.active {
+    display: flex;
+    animation-name: switch-active;
+    animation-duration: 1s;
+    animation-direction: normal;
+  }
+
+  #navbar.hidden {
+    animation-name: switch-active;
+    animation-duration: 1s;
+    animation-direction: reverse;
   }
 
   #navbar ul {
@@ -197,11 +212,25 @@ main img {
   }
 
   header img#burger {
-    height: 8px;
-    width: min-content;
+    height: 24px;
+    max-width: 50px;
+    cursor: pointer;
+    padding: 0.8rem;
+    box-sizing: content-box;
   }
 
   #getmycoffee {
     margin: 4rem 0;
+  }
+}
+
+@keyframes switch-active {
+  0% {
+    left: 100%;
+    background-color: inherit;
+  }
+
+  100% {
+    left: 0;
   }
 }
