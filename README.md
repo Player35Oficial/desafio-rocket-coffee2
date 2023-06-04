@@ -12,7 +12,7 @@ A proposta inicial do projeto é estilizar uma página para uma marca de café.
 
 ## Stack utilizada
 
-**Front-end:** React, styled-components, hook-form, yup
+**Front-end:** React
 
 
 
